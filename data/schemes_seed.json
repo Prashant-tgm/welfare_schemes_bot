@@ -1,0 +1,141 @@
+[
+  {
+    "id": "pm_kisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "description": "Income support of ₹6,000/year (₹2,000 every 4 months) directly transferred to bank accounts of eligible farmer families.",
+    "eligibility": {
+      "occupation": ["farmer"],
+      "land_owner": true,
+      "min_age": 18,
+      "max_age": null,
+      "income_limit": null,
+      "excluded_categories": ["institutional_land_holders", "income_tax_payers", "govt_employees_high_grade"]
+    },
+    "benefits": "₹6,000/year in 3 installments of ₹2,000 via Direct Benefit Transfer (DBT).",
+    "documents_required": ["Aadhaar Card", "Land ownership records (Khatauni/Khasra)", "Bank account passbook", "Mobile number"],
+    "application_process": "Apply via PM-KISAN portal, Common Service Centre (CSC), or local Patwari/Revenue officer. Self-registration possible at pmkisan.gov.in.",
+    "source_url": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "ayushman_bharat",
+    "name": "Ayushman Bharat - PM Jan Arogya Yojana (PMJAY)",
+    "description": "Health insurance cover of ₹5 lakh per family per year for secondary and tertiary hospitalization.",
+    "eligibility": {
+      "occupation": ["farmer", "laborer", "self_employed", "unemployed", "other"],
+      "income_limit": 250000,
+      "se_categories": ["SECC_deprived_household", "BPL"],
+      "min_age": 0,
+      "max_age": null
+    },
+    "benefits": "Cashless and paperless treatment up to ₹5,00,000 per family per year at empanelled hospitals.",
+    "documents_required": ["Aadhaar Card", "Ration Card", "Income Certificate (if applicable)", "SECC 2011 verification / PMJAY ID"],
+    "application_process": "Check eligibility at pmjay.gov.in or via Ayushman card kiosks/CSC. Get Ayushman Card made at nearby empanelled hospital or CSC.",
+    "source_url": "https://pmjay.gov.in"
+  },
+  {
+    "id": "pmay_g",
+    "name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
+    "description": "Financial assistance to build a pucca house for rural families without proper housing.",
+    "eligibility": {
+      "occupation": ["farmer", "laborer", "self_employed", "unemployed", "other"],
+      "house_status": "kutcha_or_no_house",
+      "income_limit": 300000,
+      "excluded_categories": ["existing_pucca_house_owners", "income_tax_payers"]
+    },
+    "benefits": "₹1.20 lakh (plain areas) / ₹1.30 lakh (hilly/difficult areas) for house construction, plus 90-95 days of unskilled labor wages under MGNREGA convergence.",
+    "documents_required": ["Aadhaar Card", "Job Card (MGNREGA, if available)", "Bank account passbook", "SECC/Awaas+ survey ID"],
+    "application_process": "Verify name in Awaas+ list at pmayg.nic.in or apply via Gram Panchayat / Block Development Office.",
+    "source_url": "https://pmayg.nic.in"
+  },
+  {
+    "id": "ujjwala",
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "description": "Free LPG gas connection to women from BPL households to replace unhealthy cooking fuels.",
+    "eligibility": {
+      "gender": ["female"],
+      "min_age": 18,
+      "se_categories": ["BPL", "SECC_deprived_household", "SC_ST", "PMAY_beneficiary", "Antyodaya_card_holder"],
+      "income_limit": null
+    },
+    "benefits": "Free LPG gas connection with first refill and stove (deposit-free); first cylinder typically free.",
+    "documents_required": ["Aadhaar Card", "Ration Card / BPL certificate", "Bank account passbook", "Passport-size photograph"],
+    "application_process": "Apply at nearest LPG distributor (Indane/Bharat Gas/HP) with documents, or online at pmuy.gov.in.",
+    "source_url": "https://pmuy.gov.in"
+  },
+  {
+    "id": "nrega",
+    "name": "MGNREGA (Mahatma Gandhi National Rural Employment Guarantee Act)",
+    "description": "Guarantees 100 days of wage employment per year to every rural household whose adult members volunteer for unskilled manual work.",
+    "eligibility": {
+      "residence": "rural",
+      "min_age": 18,
+      "occupation": ["laborer", "farmer", "self_employed", "unemployed", "other"],
+      "income_limit": null
+    },
+    "benefits": "100 days of guaranteed wage employment per household per financial year at notified minimum wages.",
+    "documents_required": ["Aadhaar Card", "Job Card application form", "Passport-size photograph", "Address proof"],
+    "application_process": "Apply for a Job Card at the Gram Panchayat office. Once issued, demand work in writing/verbally to the Panchayat.",
+    "source_url": "https://nrega.nic.in"
+  },
+  {
+    "id": "sukanya_samriddhi",
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "description": "Small savings scheme for the financial security of a girl child, offering high interest rate and tax benefits.",
+    "eligibility": {
+      "gender": ["female"],
+      "max_age_dependent": 10,
+      "relation": "parent_or_guardian_of_girl_child",
+      "income_limit": null,
+      "max_accounts_per_family": 2
+    },
+    "benefits": "High interest rate (currently ~8% p.a., compounded annually), tax-free maturity, deposits from ₹250 to ₹1.5 lakh/year.",
+    "documents_required": ["Girl child's birth certificate", "Aadhaar Card of parent/guardian", "Aadhaar Card of girl child (if available)", "Address proof"],
+    "application_process": "Open account at any post office or authorized bank branch with minimum deposit of ₹250.",
+    "source_url": "https://www.india.gov.in/sukanya-samriddhi-yojana"
+  },
+  {
+    "id": "pm_svanidhi",
+    "name": "PM SVANidhi (Street Vendor's AtmaNirbhar Nidhi)",
+    "description": "Collateral-free working capital loans for street vendors and small self-employed workers.",
+    "eligibility": {
+      "occupation": ["self_employed"],
+      "vendor_type": "street_vendor_or_hawker",
+      "income_limit": null,
+      "min_age": 18
+    },
+    "benefits": "Collateral-free loan of ₹10,000 (first tranche), ₹20,000 (second), ₹50,000 (third) with interest subsidy on timely repayment.",
+    "documents_required": ["Aadhaar Card", "Vending Certificate / Letter of Recommendation from Urban Local Body", "Bank account passbook"],
+    "application_process": "Apply via pmsvanidhi.mohua.gov.in, CSC, or nearest bank/MFI/NBFC branch.",
+    "source_url": "https://pmsvanidhi.mohua.gov.in"
+  },
+  {
+    "id": "nsap_widow",
+    "name": "National Social Assistance Programme - Widow Pension (IGNWPS)",
+    "description": "Monthly pension support to widows from BPL households.",
+    "eligibility": {
+      "gender": ["female"],
+      "marital_status": "widow",
+      "min_age": 40,
+      "max_age": 79,
+      "se_categories": ["BPL"]
+    },
+    "benefits": "Monthly pension of ₹300-₹500 (Centre) plus state top-up (varies by state, often ₹1,000+ combined).",
+    "documents_required": ["Aadhaar Card", "Husband's death certificate", "BPL Ration Card", "Bank account passbook", "Age proof"],
+    "application_process": "Apply through Gram Panchayat / Block Office / Social Welfare Department, or online state pension portal.",
+    "source_url": "https://nsap.nic.in"
+  },
+  {
+    "id": "pmfby",
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "description": "Crop insurance scheme protecting farmers against crop loss/damage due to natural calamities, pests, or diseases.",
+    "eligibility": {
+      "occupation": ["farmer"],
+      "land_owner_or_tenant": true,
+      "income_limit": null
+    },
+    "benefits": "Insurance cover for crop loss; farmer pays only 1.5-2% premium (Kharif/Rabi) or 5% (commercial/horticulture crops), rest subsidized by government.",
+    "documents_required": ["Aadhaar Card", "Land records (Khasra/Khatauni)", "Bank account passbook", "Sowing certificate / tenancy agreement (if tenant farmer)"],
+    "application_process": "Apply through bank (mandatory for loanee farmers, auto-enrolled), CSC, or pmfby.gov.in within the cutoff date for the season.",
+    "source_url": "https://pmfby.gov.in"
+  }
+]

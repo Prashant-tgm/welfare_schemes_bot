@@ -1,0 +1,19 @@
+# CORE
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.29,<1.0
+python-multipart>=0.0.9
+SQLAlchemy>=2.0,<3.0
+
+# Scraper (live scrape from myscheme.gov.in)
+requests>=2.31,<3.0
+
+# OPTIONAL — better embeddings (falls back to hashing if absent)
+# sentence-transformers
+# numpy
+
+# OPTIONAL — LLM
+# groq
+
+# OPTIONAL — IndicTrans2
+# torch
+# transformers
