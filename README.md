@@ -1,4 +1,4 @@
-# Welfare Scheme Chatbot — v2
+# Welfare Scheme Chatbot
 
 A robust, auditable, multilingual welfare-scheme assistant. v2 adds: live
 scraping with TTL/expiry, embeddings-based retrieval across ALL synced
@@ -6,17 +6,6 @@ schemes (not a hardcoded shortlist), a hybrid (JSON + Python) eligibility
 rules engine, a bounded multi-turn satisfaction loop, and a **claim graph**
 that proves every bot statement back to a source URL + scrape timestamp.
 
-## What changed from v1
-
-| Area | v1 | v2 |
-|---|---|---|
-| Scheme data | 9 hardcoded in `schemes.json` | Any number, scraped + DB-stored with TTL |
-| Storage | none (in-memory JSON) | SQLite/Postgres via SQLAlchemy, pluggable |
-| Eligibility | flat rule dict per scheme | Hybrid: JSON condition trees (AND/OR/nested) + restricted Python escape-hatch rules |
-| Retrieval | FAISS in-memory | DB-backed embeddings, cosine similarity, swappable index |
-| Conversation | fixed 6-turn, ends after results | 6-turn intake -> open follow-up loop with satisfaction check, bounded handoff |
-| Anti-hallucination proof | RAG + system prompt only | Full claim graph: claim -> rule/chunk -> source URL + scraped_at, with grounding score and Mermaid visualization |
-| Data freshness | static | scraper + sync script, auto-purges data `deadline + 5 days` after expiry |
 
 ## Architecture
 
