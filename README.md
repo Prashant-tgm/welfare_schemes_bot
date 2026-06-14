@@ -6,7 +6,8 @@ schemes (not a hardcoded shortlist), a hybrid (JSON + Python) eligibility
 rules engine, a bounded multi-turn satisfaction loop, and a **claim graph**
 that proves every bot statement back to a source URL + scrape timestamp.
 
-
+## test on this by initiating 'hi'
+wa.me/+14155238886
 ## Architecture
 
 ```
